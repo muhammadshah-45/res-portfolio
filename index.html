@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shah Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="all-container">
+
+      <nav>
+        <div class="nav_content">
+          <div class="logo">
+            <a id="logo" href="#">Shah Devs</a>
+          </div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="section_container">
+        <!-- display = grid -->
+        <div class="content">
+          <!-- display = flex -->
+          <div class="icons-speaker">
+            <p class="subtitle">Hello</p>
+            <i id="speak" class="ri-volume-up-fill"></i>
+          </div>
+          <h1 class="title">
+            I'm
+            <span
+            >Muhammad Shah <br />
+            a </span
+            >Web Developer.
+            <!-- <img id="speak" src="speaker.png" alt=""> -->
+            <br>
+            </h1>
+            <p class="description">
+              I am a Front-End Web Developer. Proficient in HTML, CSS, and
+            JavaScript. Eager to leverage technical skills and creativity to
+            contribute to dynamic web projects. With a keen eye for detail and a
+            commitment to user-centric design, I strive to craft engaging and
+            functional web experiences.
+          </p>
+          <div class="action_btns">
+            <button class="hire_me">Hire Me</button>
+            <button class="portfolio">Portfolio</button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./myimage.jpeg" width="300px" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <div id="skills" class="container skills-container">
+    <div class="absolute skill-fade-text">Skills</div>
+    <!-- Left Section -->
+    <div class="skill-container-left">
+      <h2 class="skill-heading">
+        <span class="caps">M</span>e and
+        <br />
+        MyTech Stack
+      </h2>
+      <div class="skill-subHeading">
+        <p>
+          Hi Everyone My name is Muhammad Shah. I joined programming languages at the age of 16. 
+          <p>
+            I am a Front-End Web Developer. Proficient in HTML, CSS, and
+            JavaScript. Eager to leverage technical skills and creativity to
+            contribute to dynamic web projects. With a keen eye for detail and a
+            commitment to user-centric design, I strive to craft engaging and
+            functional web experiences.
+          </p>
+        <p>
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+
+    <div class="skill-container-right">
+      <img src="./asset/asset 17.png" class="blob-style" alt="" />
+      
+      <img src="./asset/asset 7.png" alt="" class="skills-logo" />
+      <img src="./asset/asset 8.png" alt="" class="skills-logo" />
+      <img src="./asset/asset 9.svg" alt="" class="skills-logo" />
+      <img src="./asset/asset 18.png" alt="" class="skills-logo" />
+      <img src="./asset/NodeJs.svg" alt="" class="skills-logo" />
+      <img src="./asset/asset 10.png" alt="" class="skills-logo" />
+      <img src="./asset/asset 12.png" alt="" class="skills-logo" />
+      <img src="./asset/asset 14.svg" alt="" class="skills-logo" />
+      <img src="./asset/Bootstrap.svg" alt="" class="skills-logo" />
+      <img src="./asset/asset 18.png" alt="" class="skills-logo" />
+      <img src="./asset/asset 22.svg" alt="" class="skills-logo" />
+      <img src="./asset/asset 23.svg" alt="" class="skills-logo" />
+    </div>
+  </div>
+  </div>   
+  <script>
+    var audio = new Audio("mshah3.mp3");
+    
+    function playAudio() {
+      audio.play();
+    }
+  
+    document.getElementById("speak").addEventListener("click",playAudio);
+    
+   </script>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
