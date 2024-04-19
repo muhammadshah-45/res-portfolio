@@ -41,11 +41,10 @@
             <i id="speak" class="ri-volume-up-fill"></i>
           </div>
           <h1 class="title">
-            I'm
-            <span
-            >Muhammad Shah <br />
-            a </span
-            >Web Developer.
+            I'm Muhammad Shah Aurangzeb
+            <span class="role"
+            > <br />
+            </span>
             <!-- <img id="speak" src="speaker.png" alt=""> -->
             <br>
             </h1>
@@ -65,7 +64,12 @@
           <img src="./myimage.jpeg" width="300px" alt="" />
         </div>
       </div>
+
     </section>
+    <!-- faded text -->
+    <div class="faded">
+      <div class="absolute faded-text">M.Shah</div>
+    </div>
 
     <!-- Skills -->
     <div id="skills" class="container skills-container">
@@ -111,7 +115,67 @@
       <img src="./asset/asset 23.svg" alt="" class="skills-logo" />
     </div>
   </div>
-  </div>   
+  </div>  
+   <!--Contact Us  -->
+   <div id="contactme" class="contactus-container">
+    <div class="container">
+      <h1 class="contactus-heading">Contact Me</h1>
+      <h3 class="contactus-sub-heading">
+        Questions, thoughts, or just want to say hello?
+      </h3>
+
+      <div class="contactus-form-container">
+        <form class="form" action="https://formspree.io/f/mlekrnnl" method="post">
+          <div class="formfield-container">
+            <input class="formfield" type="text" name="name" id="" placeholder="Enter your name" />
+          </div>
+          <div class="formfield-container">
+            <input class="formfield" type="email" name="email" id="" placeholder="Enter your email address" />
+          </div>
+          <div class="formfield-container">
+            <input class="formfield" type="text" name="subject" id="" placeholder="Enter your subject" />
+          </div>
+          <div class="formfield-container">
+            <textarea name="message" id="" cols="30" rows="10" class="formfield formfield-textarea"
+              placeholder="Enter your message"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn-pink" id="submit-btn">
+              Send Message<i class="submit-icon fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-wrapper">
+      <div class="footer-faded-text">Muhammad Shah</div>
+      <div class="link-wrapper">
+        <div class="link">
+
+          <div>
+            <a href="#projects">Projects</a>
+          </div>
+          <div>
+            <a href="#skills">Skills</a>
+          </div>
+          <div>
+            <a href="#contactme">Contact Me</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="icon-wrapper">
+        <i class="bi bi-linkedin icon"></i>
+        <i class="fa-brands fa-github icon"></i>
+        <i class="fa-brands fa-twitter icon"></i>
+        <i class="fa-brands fa-instagram icon"></i>
+        <i class="fa-regular fa-envelope icon"></i>
+      </div>
+    </div>
+  </footer>
   <script>
     var audio = new Audio("mshah3.mp3");
     
@@ -122,7 +186,22 @@
     document.getElementById("speak").addEventListener("click",playAudio);
     
    </script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+      var typeData = new Typed(".role", {
+        strings: [
+          "a Front-End Developer",
+          "a Web Dev",
+          "a React Dev",
+          "a Coder",
+        ],
+        loop: true,
+        typeSpeed: 150,
+        backSpeed: 40,
+        backDelay: 1000,
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
